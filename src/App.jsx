@@ -415,7 +415,7 @@ export default function App(){
             <KemenkeuLogo size={34} mode={isDark?'dark':'light'}/>
             <div>
               <div style={{fontSize:12,fontWeight:700,color:T.text}}>Kementerian Keuangan Republik Indonesia</div>
-              <div style={{fontSize:11,color:T.textMuted}}>Pusdiklat Anggaran &amp; Perbendaharaan · BPPK · 2026</div>
+              <div style={{fontSize:11,color:T.textMuted}}>Pusdiklat Anggaran &amp; Perbendaharaan · 2026</div>
             </div>
           </div>
           <div style={{textAlign:'right'}}>
