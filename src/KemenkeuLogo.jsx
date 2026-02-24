@@ -1,7 +1,7 @@
-// Logo Kementerian Keuangan RI — SVG reconstruction
-export default function KemenkeuLogo({ size = 56, mode = 'dark' }) {
-  const gold   = '#C9A84C'
-  const blue   = '#003087'
+// Logo NAGARA DANA RAKCA — SVG reconstruction
+export default function NagaraDanaRakcaLogo({ size = 56, mode = 'dark' }) {
+  const gold = '#C9A84C'
+  const blue = '#003087'
   const emblem = mode === 'dark' ? '#FFFFFF' : blue
 
   return (
@@ -9,59 +9,83 @@ export default function KemenkeuLogo({ size = 56, mode = 'dark' }) {
       {/* Outer circle border */}
       <circle cx="100" cy="100" r="96" fill="none" stroke={gold} strokeWidth="4"/>
 
-      {/* Shield / Perisai Kemenkeu shape */}
-      <path d="M100 18 L148 38 L148 100 Q148 148 100 172 Q52 148 52 100 L52 38 Z"
-        fill={blue} stroke={gold} strokeWidth="3"/>
+      {/* Main shield shape */}
+      <path 
+        d="M100 20 L150 40 L150 100 Q150 150 100 170 Q50 150 50 100 L50 40 Z" 
+        fill={blue} 
+        stroke={gold} 
+        strokeWidth="3"
+      />
 
-      {/* Padi kiri */}
-      <ellipse cx="60" cy="80" rx="6" ry="14" fill={gold} transform="rotate(-30 60 80)"/>
-      <ellipse cx="52" cy="95" rx="6" ry="14" fill={gold} transform="rotate(-40 52 95)"/>
-      <ellipse cx="48" cy="112" rx="6" ry="14" fill={gold} transform="rotate(-50 48 112)"/>
-      {/* Padi kanan */}
-      <ellipse cx="140" cy="80" rx="6" ry="14" fill={gold} transform="rotate(30 140 80)"/>
-      <ellipse cx="148" cy="95" rx="6" ry="14" fill={gold} transform="rotate(40 148 95)"/>
-      <ellipse cx="152" cy="112" rx="6" ry="14" fill={gold} transform="rotate(50 152 112)"/>
+      {/* Rice stalks - left */}
+      <ellipse cx="55" cy="75" rx="5" ry="12" fill={gold} transform="rotate(-30 55 75)"/>
+      <ellipse cx="48" cy="90" rx="5" ry="12" fill={gold} transform="rotate(-40 48 90)"/>
+      <ellipse cx="43" cy="105" rx="5" ry="12" fill={gold} transform="rotate(-50 43 105)"/>
 
-      {/* Kapas kiri */}
-      <circle cx="46" cy="130" r="8" fill={gold}/>
-      <circle cx="38" cy="142" r="6" fill={gold}/>
-      {/* Kapas kanan */}
-      <circle cx="154" cy="130" r="8" fill={gold}/>
-      <circle cx="162" cy="142" r="6" fill={gold}/>
+      {/* Rice stalks - right */}
+      <ellipse cx="145" cy="75" rx="5" ry="12" fill={gold} transform="rotate(30 145 75)"/>
+      <ellipse cx="152" cy="90" rx="5" ry="12" fill={gold} transform="rotate(40 152 90)"/>
+      <ellipse cx="157" cy="105" rx="5" ry="12" fill={gold} transform="rotate(50 157 105)"/>
 
-      {/* Bintang di tengah atas */}
-      <polygon points="100,30 104,42 116,42 107,50 110,62 100,54 90,62 93,50 84,42 96,42"
-        fill={gold}/>
+      {/* Cotton - left */}
+      <circle cx="40" cy="120" r="7" fill={gold}/>
+      <circle cx="32" cy="130" r="5" fill={gold}/>
+      <circle cx="48" cy="128" r="4" fill={gold}/>
 
-      {/* Sayap kiri */}
-      <path d="M84 70 Q60 58 44 65 Q62 68 74 80" fill={gold} opacity="0.85"/>
-      <path d="M84 75 Q56 60 36 72 Q58 74 74 85" fill={gold} opacity="0.6"/>
-      {/* Sayap kanan */}
-      <path d="M116 70 Q140 58 156 65 Q138 68 126 80" fill={gold} opacity="0.85"/>
-      <path d="M116 75 Q144 60 164 72 Q142 74 126 85" fill={gold} opacity="0.6"/>
+      {/* Cotton - right */}
+      <circle cx="160" cy="120" r="7" fill={gold}/>
+      <circle cx="168" cy="130" r="5" fill={gold}/>
+      <circle cx="152" cy="128" r="4" fill={gold}/>
 
-      {/* Badan burung / tengah */}
-      <ellipse cx="100" cy="76" rx="14" ry="10" fill={gold}/>
-      <ellipse cx="100" cy="86" rx="8" ry="6"  fill={gold}/>
+      {/* Main central star */}
+      <polygon 
+        points="100,30 106,44 120,44 110,54 114,68 100,60 86,68 90,54 80,44 94,44" 
+        fill={gold}
+      />
 
-      {/* Timbangan (neraca) di tengah perisai */}
-      {/* Tiang */}
-      <rect x="98" y="95" width="4" height="34" fill="white" rx="2"/>
-      {/* Lengan */}
-      <rect x="76" y="95" width="48" height="3" fill="white" rx="1.5"/>
-      {/* Piringan kiri */}
-      <path d="M76 98 Q68 108 76 114 Q84 108 76 98Z" fill="none" stroke="white" strokeWidth="2"/>
-      {/* Piringan kanan */}
-      <path d="M124 98 Q116 108 124 114 Q132 108 124 98Z" fill="none" stroke="white" strokeWidth="2"/>
-      {/* Base timbangan */}
-      <rect x="90" y="129" width="20" height="3" fill="white" rx="1.5"/>
+      {/* Wings - left */}
+      <path d="M75 65 Q50 55 35 65 Q52 67 65 75" fill={gold} opacity="0.85"/>
+      <path d="M75 70 Q48 58 30 72 Q50 72 65 80" fill={gold} opacity="0.6"/>
 
-      {/* Garis dasar perisai */}
-      <rect x="75" y="143" width="50" height="3" fill={gold} rx="1.5"/>
+      {/* Wings - right */}
+      <path d="M125 65 Q150 55 165 65 Q148 67 135 75" fill={gold} opacity="0.85"/>
+      <path d="M125 70 Q152 58 170 72 Q150 72 135 80" fill={gold} opacity="0.6"/>
 
-      {/* Bintang kecil bawah kiri kanan */}
-      <polygon points="72,152 74,158 80,158 75,162 77,168 72,164 67,168 69,162 64,158 70,158" fill={gold} transform="scale(0.6) translate(52,98)"/>
-      <polygon points="128,152 130,158 136,158 131,162 133,168 128,164 123,168 125,162 120,158 126,158" fill={gold} transform="scale(0.6) translate(-16,98)"/>
+      {/* Central body */}
+      <ellipse cx="100" cy="70" rx="12" ry="8" fill={gold}/>
+      <ellipse cx="100" cy="80" rx="7" ry="5" fill={gold}/>
+
+      {/* Balance scale */}
+      {/* Center post */}
+      <rect x="98" y="88" width="4" height="32" fill="white" rx="2"/>
+      {/* Balance beam */}
+      <rect x="78" y="88" width="44" height="3" fill="white" rx="1.5"/>
+      {/* Left pan */}
+      <path d="M78 91 Q70 100 78 107 Q86 100 78 91Z" fill="none" stroke="white" strokeWidth="2"/>
+      {/* Right pan */}
+      <path d="M122 91 Q114 100 122 107 Q130 100 122 91Z" fill="none" stroke="white" strokeWidth="2"/>
+      {/* Base */}
+      <rect x="92" y="120" width="16" height="3" fill="white" rx="1.5"/>
+
+      {/* Bottom decoration */}
+      <rect x="70" y="135" width="60" height="4" fill={gold} rx="2"/>
+
+      {/* Small stars at bottom */}
+      <polygon 
+        points="80,145 82,151 88,151 83,155 85,161 80,157 75,161 77,155 72,151 78,151" 
+        fill={gold} 
+        transform="scale(0.7) translate(25,150)"
+      />
+      <polygon 
+        points="120,145 122,151 128,151 123,155 125,161 120,157 115,161 117,155 112,151 118,151" 
+        fill={gold} 
+        transform="scale(0.7) translate(25,150)"
+      />
+
+      {/* Decorative dots */}
+      <circle cx="100" cy="145" r="2" fill={gold}/>
+      <circle cx="108" cy="145" r="2" fill={gold}/>
+      <circle cx="92" cy="145" r="2" fill={gold}/>
     </svg>
   )
 }
