@@ -7,7 +7,7 @@ import {
 } from 'recharts'
 import * as XLSX from 'xlsx'
 import RAW_DATA from './data.js'
-import KemenkeuLogo from './KemenkeuLogo.jsx'
+import KemenkeuLogo from './KemenkeuLogo.png'
 
 const THEMES = {
   dark: {
