@@ -170,7 +170,7 @@ function PeakSeasonChart({data,th}){
       </BarChart>
     </ResponsiveContainer>
     <div style={{display:'flex',gap:16,flexWrap:'wrap',marginTop:12,padding:'10px 14px',background:'rgba(0,48,135,0.025)',borderRadius:8,border:`1px solid ${th.border}`}}>
-      {[{c:th.peakColor,l:`🔥 Peak Season${peakM.length?` (${peakM.join(', ')})`:': -'}`},{c:th.normColor,l:'Normal Season'},{c:th.lowColor,l:`❄️ Low Season${lowM.length?` (${lowM.join(', ')})`:': -'}`}].map((item,i)=>(
+      {[{c:th.peakColor,l:` Peak Season${peakM.length?` (${peakM.join(', ')})`:': -'}`},{c:th.normColor,l:'Normal Season'},{c:th.lowColor,l:` Low Season${lowM.length?` (${lowM.join(', ')})`:': -'}`}].map((item,i)=>(
         <div key={i} style={{display:'flex',alignItems:'center',gap:6}}>
           <div style={{width:12,height:12,borderRadius:3,background:item.c,flexShrink:0}}/>
           <span style={{fontSize:11,color:th.textMuted,fontWeight:500}}>{item.l}</span>
